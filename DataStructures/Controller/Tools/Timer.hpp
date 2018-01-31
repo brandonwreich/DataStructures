@@ -15,7 +15,14 @@
 
 class Timer
 {
-    
+private:
+    clock_t executionTime;
+public:
+    void startTimer();
+    void stopTimer();
+    void resetTimer();
+    void displayInformation();
+    void getTimeInMicroseconds();
 }
 
 #endif /* Timer_hpp */
