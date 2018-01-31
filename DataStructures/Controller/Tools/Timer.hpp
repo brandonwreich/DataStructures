@@ -18,11 +18,12 @@ class Timer
 private:
     clock_t executionTime;
 public:
+    Timer();
     void startTimer();
     void stopTimer();
     void resetTimer();
     void displayInformation();
-    void getTimeInMicroseconds();
-}
+    long getTimeInMicroseconds();
+};
 
 #endif /* Timer_hpp */

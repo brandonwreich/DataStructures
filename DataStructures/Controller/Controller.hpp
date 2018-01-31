@@ -10,6 +10,9 @@
 #define Controller_hpp
 
 #include "FileController.hpp"
+#include "Tools/Timer.hpp"
+
+#include <iostream>
 #include <vector>
 
 class Controller

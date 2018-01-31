@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Data">
+      <FileRef
+         location = "group:crime.csv">
+      </FileRef>
+      <FileRef
+         location = "group:CrimeData.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:CrimeData.hpp">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:../../../../Downloads/crime.csv">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../Downloads/CrimeData.cpp">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../Downloads/CrimeData.hpp">
+   </FileRef>
+   <FileRef
+      location = "self:DataStructures.xcodeproj">
+   </FileRef>
+</Workspace>
