@@ -24,8 +24,11 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
             
             if (rowCount != 0)
             {
-                CrimeData row(currentCSVLine);
-                crimeVector.push_back(row);
+                if(currentCSVLine.length() != 0)
+                {
+                    CrimeData row(currentCSVLine);
+                    crimeVector.push_back(row);
+                }
             }
             
             rowCount++;
@@ -39,12 +42,4 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
     }
     
     return crimeVector;
-}
-
-void start()
-{
-    for (int = 0; int < crimeVector.size(); int++)
-    {
-        cout << crimeVector << endl;
-    }
 }
