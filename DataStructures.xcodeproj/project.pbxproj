@@ -10,6 +10,7 @@
 		03E3F18920220BE7000F9831 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03E3F18720220BE7000F9831 /* Controller.cpp */; };
 		03E3F18B20220BF1000F9831 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03E3F18A20220BF1000F9831 /* Runner.cpp */; };
 		03E3F18E20220C77000F9831 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03E3F18C20220C77000F9831 /* FileController.cpp */; };
+		03E3F19220220ECE000F9831 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03E3F19020220ECE000F9831 /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		03E3F18A20220BF1000F9831 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		03E3F18C20220C77000F9831 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
 		03E3F18D20220C77000F9831 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
+		03E3F19020220ECE000F9831 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		03E3F19120220ECE000F9831 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 		03E3F18F20220C95000F9831 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				03E3F19020220ECE000F9831 /* Timer.cpp */,
+				03E3F19120220ECE000F9831 /* Timer.hpp */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				03E3F18920220BE7000F9831 /* Controller.cpp in Sources */,
 				03E3F18B20220BF1000F9831 /* Runner.cpp in Sources */,
 				03E3F18E20220C77000F9831 /* FileController.cpp in Sources */,
+				03E3F19220220ECE000F9831 /* Timer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
