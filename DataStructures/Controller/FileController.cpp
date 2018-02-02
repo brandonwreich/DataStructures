@@ -16,16 +16,21 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
     
     ifstream dataFile(filename);
     
+    // If the files exists at that path
     if (dataFile.is_open())
     {
+        // Keep reaing until you are at the end of the file
         while (!dataFile.eof())
         {
-            getline(dataFile, currentCSVLine, '\r');
+            // Grab each line from the CSV sperated by the carriage return character
+            getline(dataFile, currentCSVLine, '\n');
             
+            // Exclude header row
             if (rowCount != 0)
             {
                 if(currentCSVLine.length() != 0)
                 {
+                    // Create a CrimeData instance from the line
                     CrimeData row(currentCSVLine);
                     crimeVector.push_back(row);
                 }

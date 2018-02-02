@@ -12,14 +12,52 @@ using namespace std;
 
 void Controller :: start()
 {
-    cout << "Testing the Timer class" << endl;
-    Timer codeTimer;
-    codeTimer.startTimer();
- 
-    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/brei8876/Documents/Data Structures/DataStructures/DataStructures/Data/CrimeData.cpp");
+//    cout << "Testing the Timer class" << endl;
+//    Timer codeTimer;
+//    codeTimer.startTimer();
+//
+//    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/brei8876/Documents/Data Structures/DataStructures/DataStructures/Data/crime.csv");
+//
+//    for( int loop = 0; loop < 100; loop++)
+//    {
+//        cout << "Spot # " << loop << ": " << myData[loop] << endl;
+//    }
+//
+//    codeTimer.stopTimer();
+//    codeTimer.displayInformation();
     
-    for( int loop = 0; loop < 30; loop++)
+    findMaxAndMin();
+}
+
+void Controller :: findMaxAndMin()
+{
+    Timer searchTimer;
+    searchTimer.startTimer();
+    
+    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/brei8876/Documents/Data Structures/DataStructures/DataStructures/Data/crime.csv");
+    
+    int minIndex = 0;
+    int maxIndex = 0;
+    
+    for (int index = 1; index < myData.size(); index++)
     {
-        cout << "Spot # " << loop << ": " << myData[loop] << endl;
+        if(myData[minIndex] > myData[index])
+        {
+            minIndex = index;
+        }
+        
+        if(myData[maxIndex] < myData[index])
+        {
+            maxIndex = index;
+        }
     }
+    
+    searchTimer.stopTimer();
+    
+    cout << "The smallest Crime stat is at index " << minIndex << " and it is at the " << myData[minIndex].getDepartment() << " with a crime rate of " << myData[minIndex].getAllViolentRates() << endl;
+    cout << "The largest Crime stat is at index " << maxIndex << " and it is at the " << myData[maxIndex].getDepartment() << " with a crime rate of " << myData[maxIndex].getAllViolentRates() << endl;
+    
+    searchTimer.displayInformation();
+    
+    //cout << "\n" << endl;
 }
