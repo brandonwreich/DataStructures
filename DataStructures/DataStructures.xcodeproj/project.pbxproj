@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		038896B120221EB400C3DF1F /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 038896AE20221EB400C3DF1F /* CrimeData.cpp */; };
-		03E2E55B2024BE6A008F421A /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03E2E5592024BE6A008F421A /* Array.cpp */; };
 		03E3F18920220BE7000F9831 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03E3F18720220BE7000F9831 /* Controller.cpp */; };
 		03E3F18B20220BF1000F9831 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03E3F18A20220BF1000F9831 /* Runner.cpp */; };
 		03E3F18E20220C77000F9831 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03E3F18C20220C77000F9831 /* FileController.cpp */; };
@@ -31,7 +30,6 @@
 		038896AE20221EB400C3DF1F /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		038896AF20221EB400C3DF1F /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		038896B020221EB400C3DF1F /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
-		03E2E5592024BE6A008F421A /* Array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Array.cpp; sourceTree = "<group>"; };
 		03E2E55A2024BE6A008F421A /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		03E3F17C20220B97000F9831 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E3F18720220BE7000F9831 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 		03E2E5582024BE41008F421A /* Structures */ = {
 			isa = PBXGroup;
 			children = (
-				03E2E5592024BE6A008F421A /* Array.cpp */,
 				03E2E55A2024BE6A008F421A /* Array.hpp */,
 			);
 			path = Structures;
@@ -183,7 +180,6 @@
 				03E3F18B20220BF1000F9831 /* Runner.cpp in Sources */,
 				03E3F18E20220C77000F9831 /* FileController.cpp in Sources */,
 				03E3F19220220ECE000F9831 /* Timer.cpp in Sources */,
-				03E2E55B2024BE6A008F421A /* Array.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
