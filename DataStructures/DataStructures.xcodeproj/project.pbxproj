@@ -31,6 +31,7 @@
 		038896AF20221EB400C3DF1F /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		038896B020221EB400C3DF1F /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		03E2E55A2024BE6A008F421A /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		03E2E55E2024C8F5008F421A /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		03E3F17C20220B97000F9831 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E3F18720220BE7000F9831 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		03E3F18820220BE7000F9831 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -70,6 +71,14 @@
 			path = Structures;
 			sourceTree = "<group>";
 		};
+		03E2E55C2024C8E5008F421A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03E2E55E2024C8F5008F421A /* Node.hpp */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		03E3F17320220B97000F9831 = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +98,10 @@
 		03E3F17E20220B97000F9831 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				03E3F18A20220BF1000F9831 /* Runner.cpp */,
+				03E2E55C2024C8E5008F421A /* Model */,
 				03E2E5582024BE41008F421A /* Structures */,
 				038896A920221C6100C3DF1F /* Data */,
-				03E3F18A20220BF1000F9831 /* Runner.cpp */,
 				03E3F18620220BD8000F9831 /* Controller */,
 			);
 			name = DataStructures;
