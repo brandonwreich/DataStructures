@@ -99,10 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				03E3F18A20220BF1000F9831 /* Runner.cpp */,
+				03E3F18620220BD8000F9831 /* Controller */,
+				038896A920221C6100C3DF1F /* Data */,
 				03E2E55C2024C8E5008F421A /* Model */,
 				03E2E5582024BE41008F421A /* Structures */,
-				038896A920221C6100C3DF1F /* Data */,
-				03E3F18620220BD8000F9831 /* Controller */,
 			);
 			name = DataStructures;
 			sourceTree = "<group>";
