@@ -12,6 +12,10 @@ using namespace std;
 
 void Controller :: start()
 {
+    ArrayTester myTest;
+    myTest.testArrayUse();
+    myTest.testAdvancedArray();
+    
 //    cout << "Testing the Timer class" << endl;
 //    Timer codeTimer;
 //    codeTimer.startTimer();
