@@ -28,6 +28,7 @@ public:
     Array<Type>(const Array<Type> & toCopy);
     
     // Destructor
+    // How you take memory away from an object
     ~Array<Type>();
     
     // Operators
@@ -67,6 +68,7 @@ Array<Type> :: Array(const Array<Type> & toCopy)
 template <class Type>
 Array<Type> :: ~Array()
 {
+    // Deletes the array
     delete [] internalArray;
 }
 
@@ -90,14 +92,14 @@ Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
     return * this;
 }
 
-template <class Type>
+template <class Type> // Left hand of = sign -- assigns to reference
 Type & Array<Type> :: operator [] (int index)
 {
     assert(index >= 0 && index < size);
     return internalArray[index];
 }
 
-template <class Type>
+template <class Type> // Right hand of = sign -- copy
 Type Array<Type> :: operator [] (int index) const
 {
     assert(index >= 0 && index < size);
@@ -111,7 +113,7 @@ int Array<Type> :: getSize() const
 }
 
 template <class Type>
-Type Array<Type< :: getFromIndex(int index)
+Type Array<Type> :: getFromIndex(int index)
 {
     assert(index >= 0 && index < size);
     Type value = internalArray[index];
