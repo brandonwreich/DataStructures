@@ -68,14 +68,18 @@ Array<Type> :: Array(const Array<Type> & toCopy)
 template <class Type>
 Array<Type> :: ~Array()
 {
+    cout << "About to delete the structure" << endl;
+    
     // Deletes the array
     delete [] internalArray;
+    
+    cout << "Interal array deleted" << endl;
 }
 
 template <class Type>
 Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
 {
-    if (&toAssign!= toAssign.getSize())
+    if (&toAssign != this)
     {
         if (size != toAssign.getSize())
         {
