@@ -11,5 +11,14 @@
 
 #include <iostream>
 #include "../Model/Structures/Array.hpp"
+#include "../Controller/FileController.hpp"
+#include "../Controller/Tools/Timer.hpp"
+
+class ArrayTester
+{
+public:
+    void testArrayUse();
+    void testAdvancedArray();
+};
 
 #endif /* ArrayTester_hpp */
