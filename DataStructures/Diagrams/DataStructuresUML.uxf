@@ -4,20 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>60</x>
-      <y>60</y>
-      <w>100</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>List
---
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>220</x>
+      <x>210</x>
       <y>60</y>
       <w>100</w>
       <h>90</h>
@@ -30,7 +17,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
+      <x>30</x>
       <y>200</y>
       <w>460</w>
       <h>220</h>
@@ -48,14 +35,15 @@
 
 + setNextNode(LinearNode&lt;Type&gt; *): void
 + getNextNode() : LinearNode&lt;Type&gt; *
-</panel_attributes>
+
+bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>110</x>
-      <y>510</y>
+      <x>100</x>
+      <y>520</y>
       <w>290</w>
       <h>170</h>
     </coordinates>
@@ -69,18 +57,57 @@
 + Node(Type data) : constructor
 
 + getData() : Type
-+ setData(Type data) : void</panel_attributes>
++ setData(Type data) : void
+bg=pink</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>250</x>
+      <x>240</x>
       <y>410</y>
       <w>30</w>
-      <h>120</h>
+      <h>130</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>410</y>
+      <w>230</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+bg=black
+
+m2=0</panel_attributes>
+    <additional_attributes>210.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>500</y>
+      <w>280</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>/List&lt;Type&gt;/
+bg=#00bfff
+--
+
+#size
+
+--
+/+ add(Type) : void/
+/+ addAtIndex(int, Type) : void/
+/+ remove(int) : Type/
+/+ getSize() : int/
+/+ getFromIndex(int) : Type/
+/+ getFront() : LinearNode&lt;Type&gt; */
+/+ getEnd() : LinearNode&lt;Type&gt; */</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
