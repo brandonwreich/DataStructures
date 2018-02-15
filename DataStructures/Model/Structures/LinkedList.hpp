@@ -38,7 +38,7 @@ public:
     Type remove(int index);
 //    Type setAtIndex(int index, Type item);
 //    bool contains(Type item);
-}
+};
 
 template <class Type>
 LinkedList<Type> :: LinkedList()
@@ -63,7 +63,7 @@ LinkedList<Type> :: ~LinkedList()
 template <class Type>
 void LinkedList<Type> :: add(Type item)
 {
-    Linear Node<Type> * newData = new LinearNode<Type>(item);
+    LinearNode<Type> * newData = new LinearNode<Type>(item);
     
     if (this -> size == 0)
     {
@@ -158,7 +158,7 @@ Type LinkedList<Type> :: remove(int index)
 }
 
 template <class Type>
-LinearNode<Type> * LinedList<Type> :: getEnd()
+LinearNode<Type> * LinkedList<Type> :: getEnd()
 {
     return this -> end;
 }
@@ -170,7 +170,7 @@ LinearNode<Type> * LinkedList<Type> :: getFront()
 }
 
 template <class Type>
-LinearNode<type> * LinkedList<Type> :: getSize()
+int LinkedList<Type> :: getSize() const
 {
     return this -> size;
 }
