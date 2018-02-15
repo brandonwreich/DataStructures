@@ -158,6 +158,21 @@ Type LinkedList<Type> :: remove(int index)
 }
 
 template <class Type>
-LinearNode
+LinearNode<Type> * LinedList<Type> :: getEnd()
+{
+    return this -> end;
+}
+
+template <class Type>
+LinearNode<Type> * LinkedList<Type> :: getFront()
+{
+    return this -> front;
+}
+
+template <class Type>
+LinearNode<type> * LinkedList<Type> :: getSize()
+{
+    return this -> size;
+}
 
 #endif /* LinkedList_hpp */
