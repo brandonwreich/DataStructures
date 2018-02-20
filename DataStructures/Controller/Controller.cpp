@@ -16,6 +16,10 @@ void Controller :: start()
     myTest.testArrayUse();
     myTest.testAdvancedArray();
     
+    LinkedListTester myListTest;
+    myListTest.testListBasics();
+    myListTest.testListWithData();
+    
 //    cout << "Testing the Timer class" << endl;
 //    Timer codeTimer;
 //    codeTimer.startTimer();

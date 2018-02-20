@@ -38,3 +38,28 @@ void LinkedListTester :: testListBasics()
     cout << numbers.getFront() -> getData() << " is at the front of the list and should be 2312" << endl;
     cout << numbers.getEnd() -> getData() << " is at the end of the list and shold be 32567" << endl;
 }
+
+void LinkedListTester :: testListWithData()
+{
+    Timer listTimer;
+    
+    listTimer.startTimer();
+    LinkedList<CrimeData> crimes = FileController :: readDataToList("/Users/brei8876/Documents/Data Structures/DataStructures/DataStructures/Data/crime.csv");
+    listTimer.stopTimer();
+    
+    cout << "This is houw long it took to read the structure into our custom data structure" << endl;
+    listTimer.displayInformation();
+    
+    listTimer.resetTimer();
+    cout << "Here is how long it takes to access a random data value" << endl;
+    
+    listTimer.startTimer();
+    int randomLocation = (rand() * rand()) % crimes.getSize();
+    cout << "The random index is " << randomLocation << endl;
+    double totalViolentRate = crimes.getFromIndex(randomLocation).getAllViolentRates();
+    listTimer.stopTimer();
+    
+    cout << "The random crime stat is: " << totalViolentRate << " and here is the time" << endl;
+    listTimer.displayInformation();
+    
+}

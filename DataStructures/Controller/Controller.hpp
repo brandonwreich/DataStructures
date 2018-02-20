@@ -13,6 +13,7 @@
 #include "Tools/Timer.hpp"
 #include "../Model/Structures/Array.hpp"
 #include "../Testers/ArrayTester.hpp"
+#include "../Testers/LinkedListTester.hpp"
 
 #include <iostream>
 #include <vector>
