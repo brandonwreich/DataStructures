@@ -69,6 +69,11 @@ ostream & operator << (ostream &outputStream, const CrimeData & outputData)
     return outputStream << outputData.getDepartment() << " had an all violent rate of " << outputData.getAllViolentRates() << " in year: " << outputData.getYear();
 }
 
+CrimeData :: CrimeData()
+{
+    
+}
+
 /**
  Getters
  */

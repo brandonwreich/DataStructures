@@ -11,8 +11,8 @@
 
 #include "../Model/Structures/Linear/LinkedList.hpp"
 #include "../Controller/FileController.hpp"
-#include "../Controller/Tools/Time.hpp"
-#include "../Data/CrimeData.hp"
+#include "../Controller/Tools/Timer.hpp"
+#include "../Data/CrimeData.hpp"
 #include <iostream>
 
 class LinkedListTester

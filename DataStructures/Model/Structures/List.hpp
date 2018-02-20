@@ -21,7 +21,7 @@ public:
     // Structure
     virtual void add(Type item) = 0;
     virtual void addAtIndex(int index, Type item) = 0;
-    virtual Type remove(Type item) = 0;
+    virtual Type remove(int index) = 0;
     virtual Type getFromIndex(int index) = 0;
     
     // Helper
