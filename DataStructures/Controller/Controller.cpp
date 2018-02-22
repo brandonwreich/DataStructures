@@ -20,21 +20,21 @@ void Controller :: start()
     myListTest.testListBasics();
     myListTest.testListWithData();
     
-//    cout << "Testing the Timer class" << endl;
-//    Timer codeTimer;
-//    codeTimer.startTimer();
-//
-//    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/brei8876/Documents/Data Structures/DataStructures/DataStructures/Data/crime.csv");
-//
-//    for( int loop = 0; loop < 100; loop++)
-//    {
-//        cout << "Spot # " << loop << ": " << myData[loop] << endl;
-//    }
-//
-//    codeTimer.stopTimer();
-//    codeTimer.displayInformation();
+    //    cout << "Testing the Timer class" << endl;
+    //    Timer codeTimer;
+    //    codeTimer.startTimer();
+    //
+    //    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/brei8876/Documents/Data Structures/DataStructures/DataStructures/Data/crime.csv");
+    //
+    //    for( int loop = 0; loop < 100; loop++)
+    //    {
+    //        cout << "Spot # " << loop << ": " << myData[loop] << endl;
+    //    }
+    //
+    //    codeTimer.stopTimer();
+    //    codeTimer.displayInformation();
     
-//    findMaxAndMin();
+    //    findMaxAndMin();
 }
 
 void Controller :: findMaxAndMin()

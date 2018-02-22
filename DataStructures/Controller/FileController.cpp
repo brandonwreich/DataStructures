@@ -89,5 +89,4 @@ LinkedList<CrimeData> FileController :: readDataToList(string filename)
     }
     
     return crimes;
-                    
-                    }
+}
