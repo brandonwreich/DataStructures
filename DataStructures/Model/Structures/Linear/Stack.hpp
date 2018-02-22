@@ -91,6 +91,13 @@ Type Stack<Type> :: pop()
     return removed;
 }
 
+template <class Type>
+Type Stack<Type> :: remove(int index)
+{
+    assert (index == 0)
+    return pop();
+}
+
 }
 
 #endif /* Stack_hpp */
