@@ -50,4 +50,22 @@ Queue<Type> :: ~Queue()
     }
 }
 
+template <class Type>
+void Queue<Type> :: enqueue(Type item)
+{
+    LinearNode<Type> * added = new LinearNode<Type>(item);
+    
+    if (this -> size == 0)
+    {
+        this -> front = added;
+    }
+    else
+    {
+        this -> end -> setNextNode(added);
+    }
+    
+    this -> end = added;
+    this -> size++;
+}
+
 #endif /* Queue_hpp */
