@@ -45,6 +45,23 @@ Stack<Type> :: ~Stack()
     }
 }
 
+template <class Type>
+void Stack<Type> :: push(Type data)
+{
+    LinearNode<Type> * add = new LinearNode<Type>(data);
+    
+    if (this -> size == 0)
+    {
+        this -> end = add;
+    }
+    else
+    {
+        add -> setNextNode(this -> front);
+    }
+    
+    this -> front = add;
+    this -> size++;
+}
 }
 
 #endif /* Stack_hpp */
