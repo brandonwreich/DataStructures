@@ -98,6 +98,12 @@ Type Stack<Type> :: remove(int index)
     return pop();
 }
 
+template <class Type>
+Type Stack<Type> :: peek()
+{
+    return this -> getFront() -> getData();
+}
+
 }
 
 #endif /* Stack_hpp */
