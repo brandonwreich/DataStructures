@@ -114,4 +114,18 @@ void Queue<Type> :: clear()
     }
 }
 
+template <class template>
+Type Queue<Type> :: peek()
+{
+    assert(this -> size > 0)
+    return this -> getFront() -> getData();
+}
+
+template <class template>
+Type Queue<Type> :: getFromIndex(int index)
+{
+    assert (index == 0);
+    return peek();
+}
+
 #endif /* Queue_hpp */
