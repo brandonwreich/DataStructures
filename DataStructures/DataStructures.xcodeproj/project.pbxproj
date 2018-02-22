@@ -32,6 +32,7 @@
 		031CBBBA203C7D40001FBB2D /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		031CBBBB203C7D40001FBB2D /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
 		032D9D50203F141800BD4A79 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
+		032D9D53203F190300BD4A79 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		036CF4E42035D1DC00343CB2 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		038896AE20221EB400C3DF1F /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		038896AF20221EB400C3DF1F /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 				03E2E55A2024BE6A008F421A /* Array.hpp */,
 				036CF4E42035D1DC00343CB2 /* LinkedList.hpp */,
 				03C307C3202CB28A00166170 /* List.hpp */,
+				032D9D53203F190300BD4A79 /* Queue.hpp */,
 				032D9D50203F141800BD4A79 /* Stack.hpp */,
 			);
 			path = Linear;
