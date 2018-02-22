@@ -98,4 +98,20 @@ Type Queue<Type> :: dequeue()
     return returned;
 }
 
+template <class template>
+Type Queue<Type> :: remove(int index)
+{
+    assert (index == 0);
+    return dequeue();
+}
+
+template <class template>
+void Queue<Type> :: clear()
+{
+    while (this -> front != nullptr)
+    {
+        cout << dequeue() << endl;
+    }
+}
+
 #endif /* Queue_hpp */
