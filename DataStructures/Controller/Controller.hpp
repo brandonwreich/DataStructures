@@ -11,7 +11,7 @@
 
 #include "FileController.hpp"
 #include "Tools/Timer.hpp"
-#include "../Model/Structures/Array.hpp"
+#include "../Model/Structures/Linear/Array.hpp"
 #include "../Testers/ArrayTester.hpp"
 #include "../Testers/LinkedListTester.hpp"
 
