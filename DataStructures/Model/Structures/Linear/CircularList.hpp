@@ -10,7 +10,7 @@
 #define CircularList_hpp
 
 #include "List.hpp"
-#include "../..//Nodes/DoubleNode.hpp"
+#include "../../Nodes/DoubleNode.hpp"
 
 template <class Type>
 class CircularList : public List<Type>
@@ -18,7 +18,7 @@ class CircularList : public List<Type>
 private:
     DoubleNode<Type> * front;
     DoubleNode<Type> * end;
-    Double Node<Type> * findNode(int index)
+    DoubleNode<Type> * findNode(int index);
 public:
     // Constructor
     CircularList();
@@ -47,7 +47,7 @@ CircularList<Type> :: CircularList()
 template <class Type>
 CircularList<Type> :: ~CircularList()
 {
-    DoubleNode<type> * current = front;
+    DoubleNode<Type> * current = front;
     while (this -> front != nullptr)
     {
         front = front -> getNext();
@@ -62,18 +62,18 @@ DoubleNode<Type> * CircularList<Type> :: findNode(int index)
     assert (index >= 0 && index < this -> size);
     DoubleNode<Type> * nodeToFind;
     
-    if(index < this -> size/2)
+    if (index < this -> size / 2)
     {
         nodeToFind = this -> front;
-        for (int postion = 0; postion < index; postion++)
+        for (int position = 0; position < index; position++)
         {
             nodeToFind = nodeToFind -> getNext();
         }
     }
     else
     {
-        nodeToFind= this -> end;
-        for (int position = this -> size - 1; postion >= index; postion--)
+        nodeToFind = this -> end;
+        for (int position = this -> size - 1; position >= index; position--)
         {
             nodeToFind = nodeToFind -> getPrevious();
         }
@@ -83,7 +83,7 @@ DoubleNode<Type> * CircularList<Type> :: findNode(int index)
 }
 
 template <class Type>
-Void CircularList<Type> :: add(Type item)
+void CircularList<Type> :: add(Type item)
 {
     DoubleNode<Type> * addedNode;
     if (this -> size == 0)
@@ -173,6 +173,12 @@ Type CircularList<Type> :: remove(int index)
     this -> size --;
     delete removed;
     return value;
+}
+
+template <class Type>
+int CircularList<Type> :: getSize() const
+{
+    return -> size;
 }
 
 #endif /* CircularList_hpp */
