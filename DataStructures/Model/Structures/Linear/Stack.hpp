@@ -84,7 +84,7 @@ Type Stack<Type> :: pop()
     
     LinearNode<Type> * removedNode = this -> getFront();
     this -> front = removedNode -> getNextNode();
-    delete remvoedNode;
+    delete removedNode;
     
     this -> size--;
     
