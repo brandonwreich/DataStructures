@@ -93,8 +93,8 @@ Void CircularList<Type> :: add(Type item)
     }
     else
     {
-        addedNode = new DoubleNode<Type>(item, this -> end, this-front);
-        this -> end = addedNode;
+        addedNode = new DoubleNode<Type>(item, this -> end, this -> front);
+        this -> end -> setNext(addedNode)
     }
     
     this -> end = addedNode;
@@ -141,9 +141,15 @@ void CircularList<Type> :: addAtIndex(int index, Type item)
 template <class Type>
 Type CircularList<Type> :: getFromIndex(int index)
 {
-    assert (index >= 0 && index <= this -> size);
+    assert (index >= 0 && index < this -> size);
     DoubleNode<Type> * holder = findNode(index);
     return holder -> getData();
+}
+
+template <class Type>
+Type CircularList<Type> :: remove(int index)
+{
+    assert (index >= 0 && index < this -> size);
 }
 
 #endif /* CircularList_hpp */
