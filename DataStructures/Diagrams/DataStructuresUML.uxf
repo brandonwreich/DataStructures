@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>210</x>
-      <y>60</y>
+      <x>190</x>
+      <y>0</y>
       <w>100</w>
       <h>90</h>
     </coordinates>
@@ -17,8 +17,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>30</x>
-      <y>200</y>
+      <x>10</x>
+      <y>140</y>
       <w>460</w>
       <h>220</h>
     </coordinates>
@@ -42,8 +42,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>100</x>
-      <y>520</y>
+      <x>80</x>
+      <y>460</y>
       <w>290</w>
       <h>170</h>
     </coordinates>
@@ -64,8 +64,8 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>240</x>
-      <y>410</y>
+      <x>220</x>
+      <y>350</y>
       <w>30</w>
       <h>130</h>
     </coordinates>
@@ -75,22 +75,22 @@ bg=pink</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>240</x>
-      <y>410</y>
-      <w>230</w>
-      <h>160</h>
+      <x>460</x>
+      <y>220</y>
+      <w>130</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 bg=black
 
 m2=0</panel_attributes>
-    <additional_attributes>210.0;140.0;10.0;10.0</additional_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>450</x>
-      <y>500</y>
+      <x>570</x>
+      <y>140</y>
       <w>280</w>
       <h>200</h>
     </coordinates>
@@ -108,6 +108,91 @@ bg=#00bfff
 /+ getFromIndex(int) : Type/
 /+ getFront() : LinearNode&lt;Type&gt; */
 /+ getEnd() : LinearNode&lt;Type&gt; */</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>710</y>
+      <w>690</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>bg=#00BFCDD
+DoubleNode&lt;Type&gt;
+--
+
+# Double Node&lt;Type&gt; * next
+# Double Node&lt;Type&gt; * previous
+
+--
+
++ DoubleNode() : constructor
++ DoubleNode(Type data) : constructor
++ DoubleNode(Type data, DoubleNode&lt;Type&gt; * preivous, DoubleNode&lt;Type&gt; * next) : constructor
+
++ setNext(DoubleNode&lt;Type&gt; *) : void
++ getNext() : DoubleNode&lt;Type&gt; *
+
++ setPrevious(DoubleNode&lt;Types&gt; *): void
++ getPrevious() : DoubleNode&lt;Type&gt; *</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>620</y>
+      <w>150</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>850</x>
+      <y>400</y>
+      <w>460</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>bg=red
+Array&lt;Type&gt;
+--
+
+- internalArray : Type *
+- size : size
+
+--
+
++ Array&lt;Type&gt;(int size) : constructor
++ Array&lt;Type&gt;(const Array&lt;Type&gt; &amp; toCopy) : copy constructor
++ ~Array&lt;Type&gt;() : destructor
+
+Operators
++ Array&lt;Type&gt; &amp; operator = (const Array&lt;Type&gt; &amp; toReplace)
++ Operator [] (int index) : Type&amp;
++ Operator [] (int index) const : Type
+
+Methods
++ getSize() const : int
++ getFromIndex(int index) : Type
++ setAtIndex(int index, Type data) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1010</x>
+      <y>190</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>LinkedList&lt;Type&gt;
+--
+
+# </panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
