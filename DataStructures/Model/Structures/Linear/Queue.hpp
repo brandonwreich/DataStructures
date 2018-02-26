@@ -68,20 +68,20 @@ void Queue<Type> :: enqueue(Type item)
     this -> size++;
 }
 
-template <class template>
+template <class Type>
 void Queue<Type> :: addAtIndex(int index, Type item)
 {
     assert(index == this -> size - 1);
     enqueue(item);
 }
 
-template <class template>
+template <class Type>
 void Queue<Type> :: add(Type item)
 {
     enqueue(item);
 }
 
-template <class template>
+template <class Type>
 Type Queue<Type> :: dequeue()
 {
     assert (this -> size > 0);
@@ -98,14 +98,14 @@ Type Queue<Type> :: dequeue()
     return returned;
 }
 
-template <class template>
+template <class Type>
 Type Queue<Type> :: remove(int index)
 {
     assert (index == 0);
     return dequeue();
 }
 
-template <class template>
+template <class Type>
 void Queue<Type> :: clear()
 {
     while (this -> front != nullptr)
@@ -114,14 +114,14 @@ void Queue<Type> :: clear()
     }
 }
 
-template <class template>
+template <class Type>
 Type Queue<Type> :: peek()
 {
-    assert(this -> size > 0)
+    assert(this -> size > 0);
     return this -> getFront() -> getData();
 }
 
-template <class template>
+template <class Type>
 Type Queue<Type> :: getFromIndex(int index)
 {
     assert (index == 0);

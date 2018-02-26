@@ -94,7 +94,7 @@ Type Stack<Type> :: pop()
 template <class Type>
 Type Stack<Type> :: remove(int index)
 {
-    assert (index == 0)
+    assert (index == 0);
     return pop();
 }
 
@@ -107,7 +107,7 @@ Type Stack<Type> :: peek()
 template <class Type>
 Type Stack<Type> :: getFromIndex(int index)
 {
-    assert (index == 0)
+    assert (index == 0);
     return peek();
 }
 
