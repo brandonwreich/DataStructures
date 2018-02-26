@@ -101,4 +101,17 @@ Void CircularList<Type> :: add(Type item)
     this -> size++;
 }
 
+template <class Type>
+void CircularList<Type> :: addAtIndex(int index, Type item)
+{
+    assert (index >= 0 && index < this -> size);
+    DoubleNode<Type> * next = findNode(index);
+    DoubleNode<Type> * previous = next -> getPrevious();
+    DoubleNode<Type * addMe = new DoubleNode<Type>(item, previous, next);
+    previous -> setNext(addMe);
+    next -> setPrevious(addMe);
+    
+    this -> size++;
+}
+
 #endif /* CircularList_hpp */
