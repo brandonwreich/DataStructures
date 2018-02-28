@@ -77,7 +77,7 @@ DoubleNode<Type> * CircularList<Type> :: findNode(int index)
     else
     {
         nodeToFind = this -> end;
-        for (int position = this -> size - 1; position >= index; position--)
+        for (int position = this -> size - 1; position > index; position--)
         {
             nodeToFind = nodeToFind -> getPrevious();
         }
