@@ -146,5 +146,34 @@ void TestingStacksAndQueues :: stackVersusQueue()
 
 void TestingStacksAndQueues :: queueVersusList()
 {
+    // Initalize data members
+    Queue<string> wordQueue;
+    LinkedList<string> wordList;
     
+    // Add words into the queue
+    wordQueue.add("first");
+    wordQueue.add("second");
+    wordQueue.add("third");
+    wordQueue.add("fourth");
+    wordQueue.add("fifth");
+    
+    // Add words into the list
+    wordList.add("first");
+    wordList.add("second");
+    wordList.add("third");
+    wordList.add("fourth");
+    wordList.add("fifth");
+    
+    cout << "Queue: " << wordQueue.getFromIndex(0) << " versus List: " << wordList.getFromIndex(0) << endl;
+    cout << "Here is the in order removal in a queue: " << endl;
+    
+    // Clear the queue
+    wordQueue.clear();
+    cout << "Here is a backwards order removel in a list: " << endl;
+    
+    // Clear the list
+    for (int index = wordList.getSize() - 1; index >= 0; index--)
+         {
+             cout << wordList.remove(index) << endl;
+         }
 }
