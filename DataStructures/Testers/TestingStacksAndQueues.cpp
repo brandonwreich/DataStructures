@@ -97,7 +97,51 @@ void TestingStacksAndQueues :: stackVersusList()
 
 void TestingStacksAndQueues :: stackVersusQueue()
 {
+    // Initalize crime data members
+    vector<CrimeData> data = FileController :: readCrimeDataToVector("path to file");
+    Stack<CrimeData> crimeStack;
+    Queue<CrimeData> crimeQueue;
     
+    // Fill with crime stats
+    for (int index = 0; index < 100; index ++)
+    {
+        CrimeData temp = data.at(index);
+        crimeStack.push(temp);
+        crimeQueue.enqueue(temp);
+    }
+    
+    // Initalize normal data members
+    Queue<int> queue;
+    Stack<int> stack;
+    Queue<int> queueFromStack;
+    Stack<int> stackFromQueue;
+    
+    // Fill with numbers
+    for (int index = 0; index < 10; index ++)
+    {
+        queue.enqueue(index);
+        stack.push(index);
+    }
+    
+    for (int index = 0; index < 10; index++)
+    {
+        cout << index << endl;
+        cout << "Queue result: " << queue.dequeue() << endl;
+        cout << "Stack result: " << stack.pop() << endl;
+    }
+    
+    for (int index = 0; index < 10; index++)
+    {
+        queue.enqueue(index);
+        stack.push(index);
+    }
+    
+    for (int index = 0; index < 10; index++)
+    {
+        cout << index << endl;
+        cout << "Stack result: " << stackFromQueue.pop() << endl;
+        cout << "Queue result: " << queueFromStack.dequeue() << endl;
+    }
 }
 
 void TestingStacksAndQueues :: queueVersusList()
