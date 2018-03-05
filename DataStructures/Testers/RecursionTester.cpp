@@ -29,7 +29,20 @@ string RecursionTester :: mystery(string word)
 
 void RecursionTester :: testRecursionNumbers()
 {
+    // Initalize data members
+    Timer recursionTimer;
     
+    cout << "Testing fibonacci with 10" << endl;
+    
+    // Starts the timer
+    recursionTimer.startTimer();
+    
+    // Tests fib with 10
+    cout << fib(10) << endl;
+    
+    // Stops the timer and displays the information
+    recursionTimer.stopTimer();
+    recursionTimer.displayInformation();
 }
 
 void RecursionTester :: testRecusionString()
