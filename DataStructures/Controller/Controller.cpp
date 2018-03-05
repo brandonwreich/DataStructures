@@ -12,34 +12,35 @@ using namespace std;
 
 void Controller :: start()
 {
+    
+}
+
+void Controller :: testArray()
+{
     ArrayTester myTest;
     myTest.testArrayUse();
     myTest.testAdvancedArray();
-    
-    LinkedListTester myListTest;
-    myListTest.testListBasics();
-    myListTest.testListWithData();
-    
-    TestingStacksAndQueues myManyTests;
-    myManyTests.stackVersusList();
-    myManyTests.stackVersusQueue();
-    myManyTests.queueVersusList();
-    
-    //    cout << "Testing the Timer class" << endl;
-    //    Timer codeTimer;
-    //    codeTimer.startTimer();
-    //
-    //    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/brei8876/Documents/Data Structures/DataStructures/DataStructures/Data/crime.csv");
-    //
-    //    for( int loop = 0; loop < 100; loop++)
-    //    {
-    //        cout << "Spot # " << loop << ": " << myData[loop] << endl;
-    //    }
-    //
-    //    codeTimer.stopTimer();
-    //    codeTimer.displayInformation();
-    
-    //    findMaxAndMin();
+}
+
+void Controller :: testLinkedList()
+{
+    LinkedListTester listTest;
+    listTest.testListBasics();
+    listTest.testListWithData();
+}
+
+void Controller :: testStackAndQueues()
+{
+    TestingStacksAndQueues test;
+    test.stackVersusList();
+    test.stackVersusQueue();
+    test.queueVersusList();
+}
+
+void testRecursion()
+{
+    RecursionTester recursionTest;
+    recursionTest.testRecursionNumbers();
 }
 
 void Controller :: findMaxAndMin()

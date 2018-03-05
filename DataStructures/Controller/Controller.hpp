@@ -15,6 +15,7 @@
 #include "../Testers/ArrayTester.hpp"
 #include "../Testers/LinkedListTester.hpp"
 #include "../Testers/TestingStacksAndQueues.hpp"
+#include "../Testers/RecursionTester.hpp"
 
 #include <iostream>
 #include <vector>
@@ -25,5 +26,9 @@ private:
     void findMaxAndMin();
 public:
     void start();
+    void testArray();
+    void testLinkedList();
+    void testStackAndQueues();
+    void testRecusion();
 };
 #endif /* Controller_hpp */
