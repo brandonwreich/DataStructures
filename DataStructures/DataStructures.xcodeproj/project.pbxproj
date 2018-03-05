@@ -164,8 +164,8 @@
 		03E3F17E20220B97000F9831 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				03AA521F2029FFBD00310F7E /* Testers */,
 				03E3F18A20220BF1000F9831 /* Runner.cpp */,
+				03AA521F2029FFBD00310F7E /* Testers */,
 				03E3F18620220BD8000F9831 /* Controller */,
 				038896A920221C6100C3DF1F /* Data */,
 				03E2E55C2024C8E5008F421A /* Model */,
