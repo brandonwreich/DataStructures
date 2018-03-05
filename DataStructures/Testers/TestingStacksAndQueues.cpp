@@ -171,10 +171,12 @@ void TestingStacksAndQueues :: queueVersusList()
     wordList.add("fifth");
     
     cout << "Queue: " << wordQueue.getFromIndex(0) << " versus List: " << wordList.getFromIndex(0) << endl;
+    
     cout << "Here is the in order removal in a queue: " << endl;
     
     // Clear the queue
     wordQueue.clear();
+    
     cout << "Here is a backwards order removel in a list: " << endl;
     
     // Clear the list
