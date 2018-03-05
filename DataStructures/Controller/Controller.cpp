@@ -20,6 +20,11 @@ void Controller :: start()
     myListTest.testListBasics();
     myListTest.testListWithData();
     
+    TestingStacksAndQueues myManyTests;
+    myManyTests.stackVersusList();
+    myManyTests.stackVersusQueue();
+    myManyTests.queueVersusList();
+    
     //    cout << "Testing the Timer class" << endl;
     //    Timer codeTimer;
     //    codeTimer.startTimer();

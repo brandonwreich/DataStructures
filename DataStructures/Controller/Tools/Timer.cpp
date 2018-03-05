@@ -20,17 +20,27 @@ void Timer :: resetTimer()
     executionTime = 0;
 }
 
+/**
+ This method starts the timer
+ */
 void Timer :: startTimer()
 {
     executionTime = clock();
 }
 
+/**
+ This method stops the timer
+ */
 void Timer :: stopTimer()
 {
     assert(executionTime != 0);
     executionTime = clock() - executionTime;
 }
 
+/**
+ This method displays the information such as how long it took to complete
+  the task it was supposed to do
+ */
 void Timer :: displayInformation()
 {
     cout << "The execution time is: " << executionTime << endl;

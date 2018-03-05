@@ -14,6 +14,7 @@
 #include "../Model/Structures/Linear/Array.hpp"
 #include "../Testers/ArrayTester.hpp"
 #include "../Testers/LinkedListTester.hpp"
+#include "../Testers/TestingStacksAndQueues.hpp"
 
 #include <iostream>
 #include <vector>

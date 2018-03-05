@@ -60,7 +60,7 @@ void TestingStacksAndQueues :: stackVersusList()
     stackTimer.displayInformation();
     
     // Display timer information
-    cout << "The time it tood to work with List: " << endl;
+    cout << "The time it took to work with List: " << endl;
     listTimer.displayInformation();
     
     cout << "What is left in the Stack" << endl;
@@ -98,7 +98,7 @@ void TestingStacksAndQueues :: stackVersusList()
 void TestingStacksAndQueues :: stackVersusQueue()
 {
     // Initalize crime data members
-    vector<CrimeData> data = FileController :: readCrimeDataToVector("path to file");
+    vector<CrimeData> data = FileController :: readCrimeDataToVector("/Users/brei8876/Documents/Data Structures/DataStructures/DataStructures/Data/crime.csv");
     Stack<CrimeData> crimeStack;
     Queue<CrimeData> crimeQueue;
     
@@ -130,10 +130,16 @@ void TestingStacksAndQueues :: stackVersusQueue()
         cout << "Stack result: " << stack.pop() << endl;
     }
     
-    for (int index = 0; index < 10; index++)
+    for (int index = 0; index < 10; index ++)
     {
         queue.enqueue(index);
         stack.push(index);
+    }
+    
+    for (int index = 0; index < 10; index++)
+    {
+        stackFromQueue.push(queue.dequeue());
+        queueFromStack.enqueue(stack.pop());
     }
     
     for (int index = 0; index < 10; index++)
