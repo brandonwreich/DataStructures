@@ -41,11 +41,9 @@ public:
 template <class Type>
 CircularList<Type> :: CircularList()
 {
-    front -> setPrevious(end);
-    front -> setNext(end);
-    
-    end -> setPrevious(front);
-    end -> setNext(front);
+    front = nullptr;
+    end = nullptr;
+    this -> size = 0;
 }
 
 template <class Type>
@@ -174,7 +172,7 @@ Type CircularList<Type> :: remove(int index)
     removedNext -> setPrevious(removedPrevious);
     
     Type value = removed -> getData();
-    this -> size --;
+    this -> size--;
     delete removed;
     return value;
 }
