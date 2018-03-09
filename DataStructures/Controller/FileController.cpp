@@ -10,6 +10,7 @@
 
 vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
 {
+    // Initalize data members
     std :: vector<CrimeData> crimeVector;
     string currentCSVLine;
     int rowCount = 0;
@@ -36,13 +37,17 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
                 }
             }
             
+            // Add one to row count
             rowCount++;
         }
         
+        // Close the file
         dataFile.close();
     }
+    // If the file does not exist
     else
     {
+        // Print out the error
         cerr << "NO FILE" << endl;
     }
     
@@ -51,6 +56,7 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
 
 LinkedList<CrimeData> FileController :: readDataToList(string filename)
 {
+    // Initalize data members
     LinkedList<CrimeData> crimes;
     
     string currentCSVLine;
@@ -78,13 +84,17 @@ LinkedList<CrimeData> FileController :: readDataToList(string filename)
                 }
             }
             
+            // Add one to rowCount
             rowCount++;
         }
         
+        // Close the file
         dataFile.close();
     }
+    // If the file does not exist
     else
     {
+        // Print the error
         cerr << "NO FILE" << endl;
     }
     

@@ -123,27 +123,33 @@ void TestingStacksAndQueues :: stackVersusQueue()
         stack.push(index);
     }
     
+    // Loop through the stack/queue
     for (int index = 0; index < 10; index++)
     {
+        // As the results are printed they are also removed
         cout << index << endl;
         cout << "Queue result: " << queue.dequeue() << endl;
         cout << "Stack result: " << stack.pop() << endl;
     }
     
+    // Fill with numbers
     for (int index = 0; index < 10; index ++)
     {
         queue.enqueue(index);
         stack.push(index);
     }
     
+    // Add the removed numbers to the appropiate stack/queue
     for (int index = 0; index < 10; index++)
     {
         stackFromQueue.push(queue.dequeue());
         queueFromStack.enqueue(stack.pop());
     }
     
+    // Loop throught eh stack/queue
     for (int index = 0; index < 10; index++)
     {
+        // Ass the results are printed they are also removed
         cout << index << endl;
         cout << "Stack result: " << stackFromQueue.pop() << endl;
         cout << "Queue result: " << queueFromStack.dequeue() << endl;
