@@ -15,6 +15,9 @@ Timer :: Timer()
     executionTime = 0;
 }
 
+/**
+ This method resets the timer back to 0
+ */
 void Timer :: resetTimer()
 {
     executionTime = 0;
@@ -47,6 +50,9 @@ void Timer :: displayInformation()
     cout << "In human time it is " << double (executionTime)/CLOCKS_PER_SEC << " seconds" << endl;
 }
 
+/**
+ This method returns the time
+ */
 long Timer :: getTimeInMicroseconds()
 {
     return executionTime;

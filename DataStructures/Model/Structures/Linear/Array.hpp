@@ -42,6 +42,9 @@ public:
     void setAtIndex(int index, Type data);
 };
 
+/**
+ Constructor that takes an int as a parameter
+ */
 template <class Type>
 Array<Type> :: Array(int size)
 {
@@ -110,12 +113,18 @@ Type Array<Type> :: operator [] (int index) const
     return internalArray[index];
 }
 
+/**
+ Gets the size of the array and returns it
+ */
 template <class Type>
 int Array<Type> :: getSize() const
 {
     return size;
 }
 
+/**
+ Gets the object stored at the index and returns it
+ */
 template <class Type>
 Type Array<Type> :: getFromIndex(int index)
 {
@@ -124,6 +133,9 @@ Type Array<Type> :: getFromIndex(int index)
     return value;
 }
 
+/**
+ 
+ */
 template <class Type>
 void Array<Type> :: setAtIndex(int pos, Type item)
 {
