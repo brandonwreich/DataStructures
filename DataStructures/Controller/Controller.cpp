@@ -12,8 +12,7 @@ using namespace std;
 
 void Controller :: start()
 {
-    SortingTester sortTester;
-    sortTester.testSorts();
+
 }
 
 void Controller :: testArray()

@@ -70,7 +70,7 @@ void LinkedListTester :: testListWithData()
     listTimer.stopTimer();
     
     // Display information
-    cout << "This is houw long it took to read the structure into our custom data structure" << endl;
+    cout << "This is how long it took to read the structure into our custom data structure" << endl;
     listTimer.displayInformation();
     
     // Reset timer

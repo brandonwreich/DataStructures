@@ -30,7 +30,7 @@ public:
     void testArray();
     void testLinkedList();
     void testStackAndQueues();
-    void testRecusion();
+    void testRecursion();
     void testSorts();
 };
 #endif /* Controller_hpp */
