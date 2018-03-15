@@ -16,6 +16,7 @@
 #include "../Testers/LinkedListTester.hpp"
 #include "../Testers/TestingStacksAndQueues.hpp"
 #include "../Testers/RecursionTester.hpp"
+#include "../Testers/SortingTester.hpp"
 
 #include <iostream>
 #include <vector>
@@ -30,5 +31,6 @@ public:
     void testLinkedList();
     void testStackAndQueues();
     void testRecusion();
+    void testSorts();
 };
 #endif /* Controller_hpp */

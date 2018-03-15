@@ -12,7 +12,8 @@ using namespace std;
 
 void Controller :: start()
 {
-
+    SortingTester sortTester;
+    sortTester.testSorts();
 }
 
 void Controller :: testArray()
@@ -42,6 +43,12 @@ void testRecursion()
     RecursionTester recursionTest;
     recursionTest.testRecursionNumbers();
     recursionTest.testRecusionString();
+}
+
+void testSorts()
+{
+    SortingTester sortTester;
+    sortTester.testSorts();
 }
 
 void Controller :: findMaxAndMin()
