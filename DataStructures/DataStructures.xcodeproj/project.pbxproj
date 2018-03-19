@@ -62,6 +62,7 @@
 		03E3F18D20220C77000F9831 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 		03E3F19020220ECE000F9831 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		03E3F19120220ECE000F9831 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		03EF245A206001FC000EB0E4 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 		032D9D4D203F135D00BD4A79 /* NonLinear */ = {
 			isa = PBXGroup;
 			children = (
+				03EF245A206001FC000EB0E4 /* Graph.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
