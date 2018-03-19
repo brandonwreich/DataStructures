@@ -15,7 +15,7 @@
 
 using namespace std;
 
-template class<Type>
+template <class Type>
 class Graph
 {
 private:
@@ -58,10 +58,10 @@ public:
     int costTraversal(Graph<Type> & graph, int vertex);
 };
 
-template class<Type>
+template <class Type>
 const int Graph<Type> :: MAXIUM;
 
-template class<Type>
+template <class Type>
 Graph<Type> :: Graph()
 {
     this -> vertexCount = 0;
@@ -73,14 +73,14 @@ Graph<Type> :: Graph()
  Java allows for all objects to be set to null but C++
  does not.
  */
-template class<Type>
+template <class Type>
 int Graph<Type> :: size() const
 {
     return vertexCount;
 }
 
 /** Left hand side operator */
-template class<Type>
+template <class Type>
 Type& Graph<Type> :: operator [] (int vertex)
 {
     assert(vertex < vertexCount);
@@ -88,11 +88,51 @@ Type& Graph<Type> :: operator [] (int vertex)
 }
 
 /** Rigt hand side operator */
-template class<Type>
+template <class Type>
 Type Graph<Type> :: operator [] (int vertex) const
 {
     assert(vertex < vertexCount);
     return graphData[vertex];
 }
+
+template <class Type>
+void Graph<Type> :: addVertex(const Type& value)
+{
+    assert(vertexCount < MAXIUM);
+    int newVertexNumber = vertexCount;
+    vertexCount++;
+    
+    for(int otherVertex = 0; otherVertexNumber < vertexCount; otherVertexNumber++)
+    {
+        adjacencyMatrix[otherVertexNumber][newVertexNumber] = false;
+        adjacencyMatrix[newVertexNumber][otherVertexNumber] = false;
+    }
+    
+    graphData[newVertexNumber] = value;
+}
+
+template <class Type>
+void Graph<Type> :: removeEdge(int source, int target)
+{
+    assert (source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
+    adjacencyMatrix[source][target] = false;
+}
+
+template <class Type>
+void Graph<Type> :: removeEdgeUndirected(int source, int target)
+{
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
+    adjacencyMatrix[source][target] = false;
+    adjacencyMatrix[target][source] = false;
+}
+
+template <class Type>
+void Graph<Type> :: removedEdgeCost(int source, int target)
+{
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
+    weightCostMatrix[source][target] = 0;
+    weightCostMartix[target][source] = 0;
+}
+
 
 #endif /* Graph_hpp */

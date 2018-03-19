@@ -113,18 +113,14 @@ Type Array<Type> :: operator [] (int index) const
     return internalArray[index];
 }
 
-/**
- Gets the size of the array and returns it
- */
+/** Gets the size of the array and returns it */
 template <class Type>
 int Array<Type> :: getSize() const
 {
     return size;
 }
 
-/**
- Gets the object stored at the index and returns it
- */
+/** Gets the object stored at the index and returns it */
 template <class Type>
 Type Array<Type> :: getFromIndex(int index)
 {
