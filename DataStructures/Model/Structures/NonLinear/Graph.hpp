@@ -134,5 +134,38 @@ void Graph<Type> :: removedEdgeCost(int source, int target)
     weightCostMartix[target][source] = 0;
 }
 
+template <class Type>
+void Graph<Type> :: addEdge(int source, int target)
+{
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
+    adjacencyMatrix [source][target] = true;
+}
+
+template <class Type>
+void Graph<Type> :: addEdgeCost(int source, int target, int cost)
+{
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
+    weightCostMatrix[source][target] = cost;
+    weightCostMatrix[target][source] = cost;
+}
+
+template <class Type>
+void Graph<Type> :: addEdgeUndirected(int source, int target)
+{
+    assert (source >=0 && source < vertexCount && target >= 0 && target < vertexCount);
+    adjacencyMatrix[source][target] = true;
+    adjacencyMatrix[target][source] = true;
+}
+
+template <class Type>
+bool Graph<Type> :: hasUndirectedConnection(int source, int target) const
+{
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount)
+    bool isAnEdge = false;
+    
+    isAnEdge = adjacencyMatrix[source][target] || adjacencyMatrix[target][source];
+    
+    return isAnEdge;
+}
 
 #endif /* Graph_hpp */
