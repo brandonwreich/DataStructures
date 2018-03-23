@@ -102,7 +102,7 @@ void Graph<Type> :: addVertex(const Type& value)
     int newVertexNumber = vertexCount;
     vertexCount++;
     
-    for(int otherVertex = 0; otherVertexNumber < vertexCount; otherVertexNumber++)
+    for(int otherVertexNumber = 0; otherVertexNumber < vertexCount; otherVertexNumber++)
     {
         adjacencyMatrix[otherVertexNumber][newVertexNumber] = false;
         adjacencyMatrix[newVertexNumber][otherVertexNumber] = false;
@@ -150,11 +150,11 @@ void Graph<Type> :: removeEdgeUndirected(int source, int target)
 }
 
 template <class Type>
-void Graph<Type> :: removedEdgeCost(int source, int target)
+void Graph<Type> :: removeEdgeCost(int source, int target)
 {
     assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
     weightCostMatrix[source][target] = 0;
-    weightCostMartix[target][source] = 0;
+    weightCostMatrix[target][source] = 0;
 }
 
 template <class Type>
@@ -186,7 +186,7 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const
 }
 
 template <class Type>
-void Graph<Type> :: depthFirstTraveral(Graph<Type> & currentGraph, int vertex)
+void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {
     bool visitedVerticies[MAXIUM];
     assert(vertex < currentGraph.size());
@@ -197,7 +197,7 @@ void Graph<Type> :: depthFirstTraveral(Graph<Type> & currentGraph, int vertex)
 template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, bool * visited)
 {
-    std::set<int> conections = currentGraph.neighbors(vertex);
+    std::set<int> connections = currentGraph.neighbors(vertex);
     std::set<int>::iterator setIterator;
     
     visited[vertex] = true;
@@ -217,7 +217,7 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
 {
     assert(vertex < currentGraph.size());
     bool visited[MAXIUM];
-    std::set<int> connection;
+    std::set<int> connections;
     std::set<int>::iterator setIterator;
     std::queue<int> vertexQueue;
     
@@ -248,7 +248,7 @@ int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int vertex)
     assert(vertex < currentGraph.size());
     int cost = 0;
     bool visited[MAXIUM];
-    std::set<int> connection;
+    std::set<int> connections;
     std::set<int>::iterator setIterator;
     std::queue<int> vertexQueue;
     
