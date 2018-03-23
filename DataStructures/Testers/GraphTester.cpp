@@ -108,10 +108,11 @@ void GraphTester :: setup()
 void GraphTester :: testGraphs()
 {
     setup();
+    compareTraversals();
 }
 
 void GraphTester :: compareTraversals()
 {
-    
+puzzle.depthFirstTraversal(puzzle, 33);
 }
 

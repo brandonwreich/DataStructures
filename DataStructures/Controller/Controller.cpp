@@ -12,7 +12,8 @@ using namespace std;
 
 void Controller :: start()
 {
-
+    GraphTester graphTest;
+    graphTest.testGraphs();
 }
 
 void Controller :: testArray()

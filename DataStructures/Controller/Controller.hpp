@@ -17,6 +17,7 @@
 #include "../Testers/TestingStacksAndQueues.hpp"
 #include "../Testers/RecursionTester.hpp"
 #include "../Testers/SortingTester.hpp"
+#include "../Testers/GraphTester.hpp"
 
 #include <iostream>
 #include <vector>

@@ -11,9 +11,9 @@ int main()
 {
     Controller app;
     app.start();
-    app.testArray();
-    app.testLinkedList();
-    app.testStackAndQueues();
+ //   app.testArray();
+ //   app.testLinkedList();
+//    app.testStackAndQueues();
 //    app.testRecursion();
 //    app.testSorts();
     return 0;
