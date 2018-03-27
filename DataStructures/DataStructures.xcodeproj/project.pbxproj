@@ -55,6 +55,7 @@
 		03AA5221202A003400310F7E /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		03AA5224202A109A00310F7E /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		03C307C3202CB28A00166170 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		03D2C3B9206A8C9600164638 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
 		03E2E55A2024BE6A008F421A /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		03E2E55E2024C8F5008F421A /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		03E3F17C20220B97000F9831 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,11 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				03E2E55A2024BE6A008F421A /* Array.hpp */,
+				033CEBAA20445564008BF211 /* CircularList.hpp */,
 				036CF4E42035D1DC00343CB2 /* LinkedList.hpp */,
 				03C307C3202CB28A00166170 /* List.hpp */,
 				032D9D53203F190300BD4A79 /* Queue.hpp */,
 				032D9D50203F141800BD4A79 /* Stack.hpp */,
-				033CEBAA20445564008BF211 /* CircularList.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
@@ -103,9 +104,10 @@
 		032D9D4E203F136F00BD4A79 /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
-				03E2E55E2024C8F5008F421A /* Node.hpp */,
-				03AA5224202A109A00310F7E /* LinearNode.hpp */,
+				03D2C3B9206A8C9600164638 /* BinaryTreeNode.hpp */,
 				033CEBAD2044559F008BF211 /* DoubleNode.hpp */,
+				03AA5224202A109A00310F7E /* LinearNode.hpp */,
+				03E2E55E2024C8F5008F421A /* Node.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
