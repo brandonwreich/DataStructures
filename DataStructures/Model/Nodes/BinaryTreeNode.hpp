@@ -9,11 +9,10 @@
 #ifndef BinaryTreeNode_hpp
 #define BinaryTreeNode_hpp
 
-#include "Node.hpp"
-#include <assert>
+#include "Node.hpp" 
 
 template <class Type>
-class BinaryTreeNode
+class BinaryTreeNode : public Node<Type>
 {
 private:
     BinaryTreeNode<Type> * root;
@@ -23,9 +22,9 @@ public:
     BinaryTreeNode();
     BinaryTreeNode(Type data);
     
-    BinaryTreeNode<Type> * getRoot;
-    BinaryTreeNode<Type> * getLeft;
-    BinaryTreeNode<Type> * getRight;
+    BinaryTreeNode<Type> * getRootNode;
+    BinaryTreeNode<Type> * getLeftNode;
+    BinaryTreeNode<Type> * getRightNode;
     
     void setRoot(BinaryTreeNode<Type> * root);
     void setLeft(BinaryTreeNode<Type> * left);
@@ -35,41 +34,41 @@ public:
 template <class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
 {
-    this -> root = nullptr;
-    this -> left = nullptr;
-    this -> right = nullptr;
+    root = nullptr;
+    left = nullptr;
+    right = nullptr;
 }
 
 template <class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
 {
-    this -> root = nullptr;
-    this -> left = nullptr;
-    this -> right = nullptr;
+    root = nullptr;
+    left = nullptr;
+    right = nullptr;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRoot()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRootNode()
 {
-    return root;
+    return this -> root;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeft()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeftNode()
 {
-    return left;
+    return this -> left;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRight()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRightNode()
 {
-    return right;
+    return this -> right;
 }
 
 template <class Type>
-void BinaryTreeNode<Type> :: setRoot(BinaryTreeNode<Type> * root)
+void BinaryTreeNode<Type> :: setRoot(BinaryTreeNode<Type> * newRoot)
 {
-    this -> root = root;
+    root = newRoot;
 }
 
 template <class Type>

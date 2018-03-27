@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>290</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Node&lt;Type&gt;
+--
+
+#data : Type
+
+--
++ Node() : constructor
++ Node(Type data) : constructor
+
++ getData() : Type
++ setData(Type data) : void
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>80</y>
+      <w>240</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+Extends
+</panel_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>20</y>
+      <w>340</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>BinaryTreeNode&lt;Type&gt;
+--
+- root : BinaryTreeNode&lt;Type&gt;
+- left : BinaryTreeNode&lt;Type&gt;
+- right : BinaryTreeNode&lt;Type&gt;
+--
++ BinaryTreeNode() : constructor
++ BinaryTreeNode(Type data) : constructor
+
++ getRoot() : BinaryTreeNode&lt;Type&gt; *
++ getLeft() : BinaryTreeNode&lt;Type&gt; *
++ getRight() : BinaryTreeNode&lt;Type&gt; *
+
++ setRoot(BinaryTreeNode&lt;Type&gt; *) : void
++ setLeft(BinaryTreeNode&lt;Type&gt; *) : void
++ setRight(BinaryTreeNode&lt;Type&gt; *) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>280</y>
+      <w>310</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>/Tree&lt;Type&gt;/
+--
+# root : BinaryTreeNode&lt;Type&gt;
+--
+*Informational Methods*
++ getSize() : int
++ getHeight() : int
++ isComplete() : bool
++ isBalanced() : bool
+
+*Data Methods*
++ insert(Type) : void
++ contains(Type) : bool
++ remove(Type) : void
+
+ *Traversals*
+ + inOrderTraversal() : void
+ + preOrderTraversal() : void
+ + postOrderTraversal() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
