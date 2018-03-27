@@ -59,6 +59,7 @@
 		03D2C3B9206A8C9600164638 /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
 		03D2C3BB206A93DE00164638 /* BinaryTreeTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreeTester.cpp; sourceTree = "<group>"; };
 		03D2C3BC206A93DE00164638 /* BinaryTreeTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeTester.hpp; sourceTree = "<group>"; };
+		03D2C3BF206A9F0500164638 /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
 		03E2E55A2024BE6A008F421A /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		03E2E55E2024C8F5008F421A /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		03E3F17C20220B97000F9831 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				03EF245A206001FC000EB0E4 /* Graph.hpp */,
+				03D2C3BF206A9F0500164638 /* Tree.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
