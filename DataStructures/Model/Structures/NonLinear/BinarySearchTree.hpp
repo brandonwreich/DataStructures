@@ -107,4 +107,23 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
     }
 }
 
+template <class Type>
+void BinarySearchTree<Type> :: inOrderTraversal()
+{
+    inOrderTraversal(this -> root);
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: InOrderTraversal(BinaryTreeNode<Type> * inStart)
+{
+    if(inStart != nullptr)
+    {
+        cout << "going left" << endl;
+        inOrderTraversal(inStart -> getLeftNode());
+        cout << "Node Contents: " << inStart -> getData() << endl;
+        cout << "going right" << endl;
+        inOrderTraversal(inStart -> getRightNode());
+    }
+}
+
 #endif /* BinarySearchTree_hpp */
