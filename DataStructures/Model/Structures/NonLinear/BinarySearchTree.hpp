@@ -63,6 +63,12 @@ BinarySearchTree<Type> :: BinarySearchTree()
 }
 
 template <class Type>
+BinarySearchTree<Type> :: ~BinarySearchTree()
+{
+    
+}
+
+template <class Type>
 void BinarySearchTree<Type> :: insert(Type itemToInsert)
 {
     BinaryTreeNode<Type> * insertMe = new BinaryTreeNode<Type>(itemToInsert);
@@ -100,7 +106,7 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
         }
         else
         {
-            previous -> setRigthNode(insertMe);
+            previous -> setRightNode(insertMe);
         }
         
         insertMe -> setRootNode(previous);

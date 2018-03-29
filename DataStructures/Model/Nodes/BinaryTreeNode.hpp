@@ -26,9 +26,9 @@ public:
     BinaryTreeNode<Type> * getLeftNode();
     BinaryTreeNode<Type> * getRightNode();
     
-    void setRoot(BinaryTreeNode<Type> * root);
-    void setLeft(BinaryTreeNode<Type> * left);
-    void setRight(BinaryTreeNode<Type> * right);
+    void setRootNode(BinaryTreeNode<Type> * root);
+    void setLeftNode(BinaryTreeNode<Type> * left);
+    void setRightNode(BinaryTreeNode<Type> * right);
 };
 
 template <class Type>
@@ -66,19 +66,19 @@ BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRightNode()
 }
 
 template <class Type>
-void BinaryTreeNode<Type> :: setRoot(BinaryTreeNode<Type> * newRoot)
+void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * newRoot)
 {
     root = newRoot;
 }
 
 template <class Type>
-void BinaryTreeNode<Type> :: setLeft(BinaryTreeNode<Type> * left)
+void BinaryTreeNode<Type> :: setLeftNode(BinaryTreeNode<Type> * left)
 {
     this -> left = left;
 }
 
 template <class Type>
-void BinaryTreeNode<Type> :: setRight(BinaryTreeNode<Type> * right)
+void BinaryTreeNode<Type> :: setRightNode(BinaryTreeNode<Type> * right)
 {
     this -> right = right;
 }

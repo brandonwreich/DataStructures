@@ -12,8 +12,8 @@ using namespace std;
 
 void Controller :: start()
 {
-    GraphTester graphTest;
-    graphTest.testGraphs();
+    BinaryTreeTester tree;
+    tree.doTreeStuff();
 }
 
 void Controller :: testArray()
@@ -49,6 +49,18 @@ void testSorts()
 {
     SortingTester sortTester;
     sortTester.testSorts();
+}
+
+void testGraph()
+{
+    GraphTester graphTest;
+    graphTest.testGraphs();
+}
+
+void testBinaryTree()
+{
+    BinaryTreeTester tree;
+    tree.doTreeStuff();
 }
 
 void Controller :: findMaxAndMin()
