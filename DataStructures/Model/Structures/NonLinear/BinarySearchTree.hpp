@@ -172,11 +172,15 @@ void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * inStart)
 {
     if(inStart != nullptr)
     {
-        cout << "going left" << endl;
+        cout << "Checking left" << endl;
         inOrderTraversal(inStart -> getLeftNode());
-        cout << "Node Contents: " << inStart -> getData() << endl;
-        cout << "going right" << endl;
+        cout << "Root Node Contents: " << inStart -> getData() << endl;
+        cout << "Checking right" << endl;
         inOrderTraversal(inStart -> getRightNode());
+    }
+    else
+    {
+        cout << "Empty sub tree - leave" << endl;
     }
 }
 
