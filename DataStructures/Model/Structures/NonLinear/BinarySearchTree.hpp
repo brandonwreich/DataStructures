@@ -28,7 +28,7 @@ protected:
     void postOrderTraversal(BinaryTreeNode<Type> * postStart);
     
     BinaryTreeNode<Type> * getRightMostChild(BinaryTreeNode<Type> * current);
-    BinaryTreeNode<Type> * getRightMostChild(BinaryTreeNode<Type> * current);
+    BinaryTreeNode<Type> * getLeftMostChild(BinaryTreeNode<Type> * current);
     
     void removeNode(BinaryTreeNode<Type> * removeMe);
 public:
@@ -49,7 +49,7 @@ public:
     bool isBalanced();
     
     bool contains(Type value);
-    void inset(Type itemToInsert);
+    void insert(Type itemToInsert);
     void remove(Type value);
     
     Type findMinimum();
@@ -80,7 +80,7 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
             previous = current;
             if(itemToInsert < current -> getData())
             {
-                current = currrent -> getLeftNode();
+                current = current -> getLeftNode();
             }
             else if(itemToInsert > current -> getData())
             {
@@ -103,7 +103,7 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
             previous -> setRigthNode(insertMe);
         }
         
-        insertMe -> setRootNode(previous)
+        insertMe -> setRootNode(previous);
     }
 }
 
@@ -114,7 +114,7 @@ void BinarySearchTree<Type> :: inOrderTraversal()
 }
 
 template <class Type>
-void BinarySearchTree<Type> :: InOrderTraversal(BinaryTreeNode<Type> * inStart)
+void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * inStart)
 {
     if(inStart != nullptr)
     {
