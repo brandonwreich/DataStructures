@@ -108,6 +108,54 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
 }
 
 template <class Type>
+void BinarySearchTree<Type> :: preOrderTraversal()
+{
+    
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: postOrderTraversal()
+{
+    
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: contains(Type value)
+{
+    return false;
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: remove(Type item)
+{
+    
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: getHeight()
+{
+    return -1;
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: getSize()
+{
+    return -1;
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isComplete()
+{
+    return false;
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isBalanced()
+{
+    return false;
+}
+
+template <class Type>
 void BinarySearchTree<Type> :: inOrderTraversal()
 {
     inOrderTraversal(this -> root);
