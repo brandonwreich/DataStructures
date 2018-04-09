@@ -93,5 +93,4 @@ void LinkedListTester :: testListWithData()
     // Display information
     cout << "The random crime stat is: " << totalViolentRate << " and here is the time" << endl;
     listTimer.displayInformation();
-    
 }

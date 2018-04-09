@@ -187,7 +187,7 @@ void TestingStacksAndQueues :: queueVersusList()
     
     // Clear the list
     for (int index = wordList.getSize() - 1; index >= 0; index--)
-         {
-             cout << wordList.remove(index) << endl;
-         }
+    {
+        cout << wordList.remove(index) << endl;
+    }
 }

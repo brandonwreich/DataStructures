@@ -42,7 +42,7 @@ void Timer :: stopTimer()
 
 /**
  This method displays the information such as how long it took to complete
-  the task it was supposed to do
+ the task it was supposed to do
  */
 void Timer :: displayInformation()
 {
