@@ -99,7 +99,8 @@ Extends
       <w>464</w>
       <h>480</h>
     </coordinates>
-    <panel_attributes>BinarySearchTree&lt;Type&gt;
+    <panel_attributes>bg=#90065
+BinarySearchTree&lt;Type&gt;
 --
 *Structure*
 + BinarySearchTree() : Constructor
