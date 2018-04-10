@@ -409,7 +409,7 @@ void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
         {
             previous -> setLeftNode(removeMe);
         }
-        else if (previous != nullptr && removeMe -> getData) > previous -> getData())
+        else if (previous != nullptr && removeMe -> getData() > previous -> getData())
         {
             previous -> setRightNode(removeMe);
         }
