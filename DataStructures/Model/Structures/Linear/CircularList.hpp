@@ -162,6 +162,7 @@ Type CircularList<Type> :: remove(int index)
         this -> front = removedNext;
         this -> end -> setNext(removedNext);
     }
+    
     if (index == this -> size - 1)
     {
         this -> end = removedPrevious;

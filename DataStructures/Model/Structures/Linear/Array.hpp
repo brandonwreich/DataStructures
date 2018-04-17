@@ -96,6 +96,7 @@ Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign)
             internalArray[index] = toAssign[index];
         }
     }
+    
     return * this;
 }
 

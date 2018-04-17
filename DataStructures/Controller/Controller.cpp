@@ -14,6 +14,9 @@ void Controller :: start()
 {
     BinaryTreeTester tree;
     tree.doTreeStuff();
+    
+    GraphTester graphTest;
+    graphTest.testGraphs();
 }
 
 void Controller :: testArray()
