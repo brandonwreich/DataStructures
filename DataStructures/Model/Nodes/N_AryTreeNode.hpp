@@ -9,24 +9,23 @@
 #ifndef N_AryTreeNode_hpp
 #define N_AryTreeNode_hpp
 
-#include <set>
+#include <vector>
 #include "Node.hpp"
 using namespace std;
 
 template <class Type>
-class N_AryTree : public Node<Type>
+class N_AryTreeNode : public Node<Type>
 {
 private:
-    set<N_AryTreeNode<Type>*> nodes;
+    vector<N_AryTreeNode<Type>*> nodes;
     N_AryTreeNode<Type> * root;
-    
 public:
     N_AryTreeNode<Type>();
-    ~N_ArtTreeNode<Type>();
+    ~N_AryTreeNode<Type>();
     N_AryTreeNode<Type>(Type data);
     
-    set<N_AryTreeNode<Type>*> getNodes();
-    N_AarTreeNode<Type> * getRoot();
+    vector<N_AryTreeNode<Type>*> getNodes();
+    N_AryTreeNode<Type> * getRoot();
     int getChildCount();
     
     void setRoot(N_AryTreeNode<Type> * root);
@@ -48,7 +47,10 @@ N_AryTreeNode<Type> :: N_AryTreeNode(Type data) : Node<Type>(data)
 template <class Type>
 N_AryTreeNode<Type> :: ~N_AryTreeNode()
 {
-    nodes.clear();
+    for(int index = nodes.size() - 1; index >= 0; index--)
+    {
+        delete nodes[index];
+    }
 }
 
 template <class Type>
@@ -58,7 +60,7 @@ N_AryTreeNode<Type> * N_AryTreeNode<Type> :: getRoot()
 }
 
 template <class Type>
-set<N_AryTreeNode<Type>*> N_AryTreeNode<Type> :: getNodes()
+vector<N_AryTreeNode<Type>*> N_AryTreeNode<Type> :: getNodes()
 {
     return nodes;
 }
@@ -66,7 +68,7 @@ set<N_AryTreeNode<Type>*> N_AryTreeNode<Type> :: getNodes()
 template <class Type>
 int N_AryTreeNode<Type> :: getChildCount()
 {
-    return nodes.size9);
+    return nodes.size();
 }
 
 template <class Type>
