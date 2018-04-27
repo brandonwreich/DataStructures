@@ -57,6 +57,8 @@
 		03AA5220202A003400310F7E /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		03AA5221202A003400310F7E /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		03AA5224202A109A00310F7E /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
+		03AAA80B2093735E00978223 /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashNode.hpp; sourceTree = "<group>"; };
+		03AAA8112093780300978223 /* Hashtable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hashtable.hpp; sourceTree = "<group>"; };
 		03BB7B6C208E2185005BDDCB /* N_AryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = N_AryTreeNode.hpp; sourceTree = "<group>"; };
 		03BB7B6E208E2A4B005BDDCB /* N_AryTreeNodeTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = N_AryTreeNodeTester.cpp; sourceTree = "<group>"; };
 		03BB7B6F208E2A4B005BDDCB /* N_AryTreeNodeTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = N_AryTreeNodeTester.hpp; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				03EF245A206001FC000EB0E4 /* Graph.hpp */,
 				03D2C3BF206A9F0500164638 /* Tree.hpp */,
 				03F9D9FD20863AB600AA1372 /* AVLTree.hpp */,
+				03AAA8112093780300978223 /* Hashtable.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
@@ -122,6 +125,7 @@
 				03AA5224202A109A00310F7E /* LinearNode.hpp */,
 				03E2E55E2024C8F5008F421A /* Node.hpp */,
 				03BB7B6C208E2185005BDDCB /* N_AryTreeNode.hpp */,
+				03AAA80B2093735E00978223 /* HashNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
